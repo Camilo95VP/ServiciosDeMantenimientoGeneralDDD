@@ -1,16 +1,14 @@
 package co.com.mantenimiento.cliente;
 
-import co.com.mantenimiento.commands.CrearCliente;
-import co.com.mantenimiento.events.ClienteCreado;
-import co.com.mantenimiento.values.ClienteId;
-import co.com.mantenimiento.values.DatosPersonales;
+import co.com.mantenimiento.cliente.commands.CrearCliente;
+import co.com.mantenimiento.cliente.events.ClienteCreado;
+import co.com.mantenimiento.cliente.values.ClienteId;
+import co.com.mantenimiento.cliente.values.DatosPersonales;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CrearClienteUseCaseTest {
 

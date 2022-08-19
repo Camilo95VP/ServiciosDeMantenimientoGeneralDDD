@@ -1,14 +1,13 @@
 package co.com.mantenimiento.cliente;
 
-import co.com.mantenimiento.cliente.AgregarContactoUseCase;
-import co.com.mantenimiento.commands.AgregarContacto;
-import co.com.mantenimiento.events.ClienteCreado;
-import co.com.mantenimiento.events.ContactoAgregado;
-import co.com.mantenimiento.values.ClienteId;
-import co.com.mantenimiento.values.ContactoId;
-import co.com.mantenimiento.values.DatosPersonales;
-import co.com.mantenimiento.values.Direccion;
-import co.com.mantenimiento.values.WhatsApp;
+import co.com.mantenimiento.cliente.commands.AgregarContacto;
+import co.com.mantenimiento.cliente.events.ClienteCreado;
+import co.com.mantenimiento.cliente.events.ContactoAgregado;
+import co.com.mantenimiento.cliente.values.ClienteId;
+import co.com.mantenimiento.cliente.values.ContactoId;
+import co.com.mantenimiento.cliente.values.DatosPersonales;
+import co.com.mantenimiento.cliente.values.Direccion;
+import co.com.mantenimiento.cliente.values.WhatsApp;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
@@ -62,5 +61,5 @@ private List<DomainEvent> history(){
 
     event.setAggregateRootId("13123");
     return List.of(event);
-}
+   }
 }

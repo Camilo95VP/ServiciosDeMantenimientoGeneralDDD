@@ -1,13 +1,13 @@
 package co.com.mantenimiento.cliente;
 
-import co.com.mantenimiento.commands.AgregarGarantia;
-import co.com.mantenimiento.events.ClienteCreado;
-import co.com.mantenimiento.events.GarantiaAgregada;
-import co.com.mantenimiento.values.ClienteId;
-import co.com.mantenimiento.values.DatosPersonales;
-import co.com.mantenimiento.values.Fecha;
-import co.com.mantenimiento.values.GarantiaId;
-import co.com.mantenimiento.values.Motivo;
+import co.com.mantenimiento.cliente.commands.AgregarGarantia;
+import co.com.mantenimiento.cliente.events.ClienteCreado;
+import co.com.mantenimiento.cliente.events.GarantiaAgregada;
+import co.com.mantenimiento.cliente.values.ClienteId;
+import co.com.mantenimiento.cliente.values.DatosPersonales;
+import co.com.mantenimiento.cliente.values.Fecha;
+import co.com.mantenimiento.cliente.values.GarantiaId;
+import co.com.mantenimiento.cliente.values.Motivo;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
