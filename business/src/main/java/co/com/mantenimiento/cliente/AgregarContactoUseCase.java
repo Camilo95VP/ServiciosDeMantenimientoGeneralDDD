@@ -15,7 +15,7 @@ public class AgregarContactoUseCase extends UseCase<RequestCommand<AgregarContac
         var cliente = Cliente.from(command.getClienteId(),
                 repository().getEventsBy(command.getClienteId().value()));
 
-        cliente.agregarContacto(command.getWhatsApp(), command.getDireccion());
+        cliente.agregarContacto(command.getContactoId(),command.getWhatsApp(), command.getDireccion());
 
         emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
     }

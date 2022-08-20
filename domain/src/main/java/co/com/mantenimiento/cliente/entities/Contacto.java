@@ -15,7 +15,10 @@ public class Contacto extends Entity<ContactoId> {
         this.direccion = direccion;
     }
 
-
+    public void actualizarContacto(WhatsApp whatsApp, Direccion direccion){
+        this.direccion = direccion;
+        this.whatsApp = whatsApp;
+    }
     public WhatsApp getWhatsApp() {
         return whatsApp;
     }

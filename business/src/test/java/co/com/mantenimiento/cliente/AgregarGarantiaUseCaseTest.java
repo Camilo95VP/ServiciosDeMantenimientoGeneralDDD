@@ -43,6 +43,7 @@ class AgregarGarantiaUseCaseTest  {
                 new Fecha(LocalDateTime.now()));
 
         when(repository.getEventsBy("222")).thenReturn(history());
+        useCase.addRepository(repository);
 
         //Act
         var events = UseCaseHandler.getInstance()

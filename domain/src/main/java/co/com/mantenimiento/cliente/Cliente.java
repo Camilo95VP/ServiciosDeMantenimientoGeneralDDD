@@ -3,6 +3,7 @@ package co.com.mantenimiento.cliente;
 import co.com.mantenimiento.cliente.entities.Contacto;
 import co.com.mantenimiento.cliente.entities.Garantia;
 import co.com.mantenimiento.cliente.events.ClienteCreado;
+import co.com.mantenimiento.cliente.events.ContactoActualizado;
 import co.com.mantenimiento.cliente.events.ContactoAgregado;
 import co.com.mantenimiento.cliente.events.GarantiaAgregada;
 import co.com.mantenimiento.cliente.values.ClienteId;
@@ -44,14 +45,32 @@ public class Cliente extends AggregateEvent<ClienteId> {
     }
 
     //compórtamientos
-    public void agregarContacto(WhatsApp whatsApp, Direccion direccion){
-        var contactoId = new ContactoId();
-        appendChange(new ContactoAgregado(contactoId,whatsApp,direccion));
+    public void agregarContacto(ContactoId contactoId, WhatsApp whatsApp, Direccion direccion){
+        appendChange(new ContactoAgregado(contactoId,whatsApp,direccion)).apply();
     }
 
     public void agregarGarantia(Motivo motivo, Fecha fecha){
         var garantiaId = new GarantiaId();
-        appendChange(new GarantiaAgregada(garantiaId,motivo,fecha));
+        appendChange(new GarantiaAgregada(garantiaId,motivo,fecha)).apply();
     }
 
+    public void actualizarContacto(ClienteId clienteId,ContactoId contactoId,WhatsApp whatsApp, Direccion direccion){
+        appendChange(new ContactoActualizado(clienteId,contactoId,whatsApp,direccion)).apply();
+    }
+
+    public ClienteId getClienteId() {
+        return clienteId;
+    }
+
+    public DatosPersonales getDatosPersonales() {
+        return datosPersonales;
+    }
+
+    public Set<Garantia> getGarantia() {
+        return garantia;
+    }
+
+    public Set<Contacto> getContacto() {
+        return contacto;
+    }
 }
