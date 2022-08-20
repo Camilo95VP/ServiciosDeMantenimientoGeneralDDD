@@ -73,8 +73,6 @@ Idomain/src/main/java/co/com/mantenimiento/personal/values/PersonalId.java,a\a\
 Rdomain/src/main/java/co/com/mantenimiento/personal/values/CantidadDeServicios.java,e\8\e8555ae8085e1c0967aa193fe50e45a4435a51da
 ~
 Ndomain/src/main/java/co/com/mantenimiento/servicio/commands/CrearServicio.java,b\b\bbbf20c2c65022b8db946b9acceb5dcee6c15939
-u
-Edomain/src/main/java/co/com/mantenimiento/servicio/entities/Area.java,0\0\00e3dadd10817058e60d26ec4705e4cfe3f3b9f4
 z
 Jdomain/src/main/java/co/com/mantenimiento/servicio/entities/Categoria.java,b\b\bb355a8f92c9842c337037511b3b14ab0839b2a8
 }
@@ -105,8 +103,6 @@ Ubusiness/src/test/java/co/com/mantenimiento/servicio/AgregarCategoriaUseCaseTes
 Ldomain/src/main/java/co/com/mantenimiento/servicio/commands/AgregarArea.java,0\e\0eba42dbd8a7d972645421ec88cd5b6430175fea
 {
 Kdomain/src/main/java/co/com/mantenimiento/servicio/events/AreaAgregada.java,c\9\c947aba981573869dda3a740316ed7183e28f5b7
-
-Odomain/src/main/java/co/com/mantenimiento/servicio/commands/ActualizarArea.java,2\7\27cdffa910366cd8c99d4ced38d0ed33b53b509e
 ‚
 Rbusiness/src/test/java/co/com/mantenimiento/servicio/CrearServicioUseCaseTest.java,e\5\e59ba0b838b5c6c6f2622252bbebadcea7c83c65
 €
@@ -121,12 +117,6 @@ Pdomain/src/main/java/co/com/mantenimiento/personal/commands/AgregarVendedor.jav
 domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
 @
 business/pom.xml,d\4\d4ebdfff43bfaf86e620b416afb4835b5f67b594
-~
-Ndomain/src/main/java/co/com/mantenimiento/servicio/events/AreaActualizada.java,7\a\7a3485af93f0ea8a8ca541902f5fcc8d535c0ad3
-v
-Fdomain/src/main/java/co/com/mantenimiento/servicio/ServicioChange.java,7\2\72be7db5c1885d15a3dd5873ed49a9bed58c3a17
-p
-@domain/src/main/java/co/com/mantenimiento/servicio/Servicio.java,4\5\457f732c88f5cfc3f73653e523ee194ee89a7bad
 v
 Fdomain/src/main/java/co/com/mantenimiento/cliente/values/WhatsApp.java,b\9\b9053c55e3a45bf42975caac0269512e09ca8f38
 

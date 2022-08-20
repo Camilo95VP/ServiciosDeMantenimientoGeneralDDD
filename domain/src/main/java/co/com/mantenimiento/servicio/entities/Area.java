@@ -14,6 +14,11 @@ public class Area extends Entity<AreaId> {
         this.tipoDeZona = tipoDeZona;
         this.tipoDeInstalacion = tipoDeInstalacion;
     }
+    public void actualizarArea(TipoDeZona tipoDeZona, TipoDeInstalacion tipoDeInstalacion){
+        this.tipoDeZona = tipoDeZona;
+        this.tipoDeInstalacion = tipoDeInstalacion;
+    }
+
 
     public TipoDeZona getTipoDeZona() {
         return tipoDeZona;
