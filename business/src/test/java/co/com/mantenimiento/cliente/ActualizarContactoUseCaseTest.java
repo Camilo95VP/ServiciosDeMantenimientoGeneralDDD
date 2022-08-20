@@ -48,6 +48,7 @@ class ActualizarContactoUseCaseTest {
         when(repository.getEventsBy("987")).thenReturn(eventos(contactoId));
         useCase.addRepository(repository);
 
+        //Act
         var events = UseCaseHandler.getInstance()
                 .setIdentifyExecutor("987")
                 .syncExecutor(useCase, new RequestCommand<>(command))

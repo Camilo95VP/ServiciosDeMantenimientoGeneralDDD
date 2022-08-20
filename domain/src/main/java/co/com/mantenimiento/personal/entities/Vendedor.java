@@ -15,6 +15,11 @@ public class Vendedor extends Entity<VendedorId> {
         this.cantidadDeServicios = cantidadDeServicios;
     }
 
+    public void actualizarVendedor(TipoDeServicio tipoDeServicio, CantidadDeServicios cantidadDeServicios){
+        this.tipoDeServicio = tipoDeServicio;
+        this.cantidadDeServicios = cantidadDeServicios;
+    }
+
     public TipoDeServicio getTipoDeServicio() {
         return tipoDeServicio;
     }

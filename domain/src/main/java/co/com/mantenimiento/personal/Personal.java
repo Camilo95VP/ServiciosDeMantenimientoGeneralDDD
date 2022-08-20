@@ -2,6 +2,7 @@ package co.com.mantenimiento.personal;
 
 import co.com.mantenimiento.personal.entities.TecnicoMantenimiento;
 import co.com.mantenimiento.personal.entities.Vendedor;
+import co.com.mantenimiento.personal.events.VendedorActualizado;
 import co.com.mantenimiento.personal.values.CantidadDeServicios;
 import co.com.mantenimiento.personal.values.TipoDeServicio;
 import co.com.mantenimiento.personal.values.VendedorId;
@@ -44,11 +45,29 @@ public class Personal extends AggregateEvent<PersonalId> {
     //comportamientos
     public void agregarTecnicoMantenimiento(ServicioCorrespondiente servicioCorrespondiente, Cobertura cobertura){
         var tecnicoMantenimientoId = new TecnicoMantenimientoId();
-        appendChange(new TecnicoMantenimientoAgregado(tecnicoMantenimientoId,servicioCorrespondiente,cobertura));
+        appendChange(new TecnicoMantenimientoAgregado(tecnicoMantenimientoId,servicioCorrespondiente,cobertura)).apply();
     }
     public void agregarVendedor(TipoDeServicio tipoDeServicio, CantidadDeServicios cantidadDeServicios){
         var vendedorId = new VendedorId();
-        appendChange(new VendedorAgregado(vendedorId,tipoDeServicio,cantidadDeServicios));
+        appendChange(new VendedorAgregado(vendedorId,tipoDeServicio,cantidadDeServicios)).apply();
+    }
+    public void actualizarVendedor(PersonalId personalId, VendedorId vendedorId, TipoDeServicio tipoDeServicio, CantidadDeServicios cantidadDeServicios){
+        appendChange(new VendedorActualizado(personalId,vendedorId,tipoDeServicio,cantidadDeServicios)).apply();
     }
 
+    public PersonalId getPersonalId() {
+        return personalId;
+    }
+
+    public Cargo getCargo() {
+        return cargo;
+    }
+
+    public Set<TecnicoMantenimiento> getTecnicoMantenimiento() {
+        return tecnicoMantenimiento;
+    }
+
+    public Set<Vendedor> getVendedor() {
+        return vendedor;
+    }
 }
