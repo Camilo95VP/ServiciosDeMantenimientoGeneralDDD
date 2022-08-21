@@ -1,11 +1,11 @@
 # __Servicios de mantenimiento__
 
-## Datos de Presentación
+## Datos de presentación
 
 - Fecha: `21 de Agosto del 2022`
 - Autor: `Juan Camilo Castañeda Castro`
 
-## Objetivos del Proyecto
+## Objetivos del proyecto
 
 - Este proyecto esta basado bajo el marco de trabajo DDD(Domain Driven Desing) donde se hace un analisis sobre la necesidad puntual del negocio y a partir de alli crear un modelo de trabajo con una arquitectura limpia y lenguaje ubicuo.
 - Implementar los comportamientos necesarios para identificar las partes fundamentales del negocio.
@@ -15,7 +15,7 @@
 
 <br>
 <p align="center">
-  <img  src="domainmodels/ANALISISCONTEXTOSYSUBDOMINIOS.png"/>
+  <img  src="models/ANALISISCONTEXTOSYSUBDOMINIOS.png"/>
 
 </p>
 
@@ -23,7 +23,7 @@
 
 <br>
 <p align="center">
-  <img  src="domainmodels/ANALISISSUBDOMINIOCORE.png"/>
+  <img  src="models/ANALISISSUBDOMINIOCORE.png"/>
 
 </p>
 
@@ -31,7 +31,7 @@
 
 <br>
 <p align="center">
-  <img  src="domainmodels/MODELODEDOMINIO.png"/>
+  <img  src="models/MODELODEDOMINIO.png"/>
 
 </p>
 
@@ -39,7 +39,7 @@
 
 <br>
 <p align="center">
-  <img  src="domainmodels/EVENTOSDEDOMINIO.png"/>
+  <img  src="models/EVENTOSDEDOMINIO.png"/>
 
 </p>
 
