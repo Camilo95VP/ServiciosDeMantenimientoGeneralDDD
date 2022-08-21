@@ -56,9 +56,7 @@ class AgregarVendedorUseCaseTest {
         Assertions.assertEquals("Plomeria", vendedorAgregado.getTipoDeServicio().value());
     }
     private List<DomainEvent> history(){
-
         var event = new PersonalCreado(new Cargo("Jardinero"));
-
         event.setAggregateRootId("24536543");
         return List.of(event);
     }

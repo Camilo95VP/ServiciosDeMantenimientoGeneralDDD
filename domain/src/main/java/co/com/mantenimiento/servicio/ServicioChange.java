@@ -1,6 +1,5 @@
 package co.com.mantenimiento.servicio;
 
-import co.com.mantenimiento.cliente.events.ContactoActualizado;
 import co.com.mantenimiento.servicio.entities.Area;
 import co.com.mantenimiento.servicio.entities.Categoria;
 import co.com.mantenimiento.servicio.events.AreaActualizada;

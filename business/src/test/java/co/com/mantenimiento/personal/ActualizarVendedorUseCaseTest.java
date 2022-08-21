@@ -61,17 +61,13 @@ class ActualizarVendedorUseCaseTest {
     }
 
     private List<DomainEvent> eventos(VendedorId vendedorId){
-
-        return List.of(new PersonalCreado(
-
-                new Cargo("Vendedor")),
+        return List.of(new PersonalCreado(new Cargo("Vendedor")),
 
                 new VendedorAgregado(vendedorId,new TipoDeServicio("Jardineria"), new CantidadDeServicios(5)),
 
                 new VendedorAgregado(VendedorId.of("567"),new TipoDeServicio("Jardineria"), new CantidadDeServicios(2)),
                 new VendedorAgregado(VendedorId.of("879"),new TipoDeServicio("Jardineria"), new CantidadDeServicios(1)),
                 new VendedorAgregado(VendedorId.of("675"),new TipoDeServicio("Jardineria"), new CantidadDeServicios(4))
-
         );
     }
 }

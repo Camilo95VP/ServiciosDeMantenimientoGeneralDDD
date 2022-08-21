@@ -56,9 +56,7 @@ class AgregarTecnicoMantenimientoUseCaseTest {
     }
 
     private List<DomainEvent> history(){
-
         var event = new PersonalCreado(new Cargo("Electrico"));
-
         event.setAggregateRootId("134245");
         return List.of(event);
     }

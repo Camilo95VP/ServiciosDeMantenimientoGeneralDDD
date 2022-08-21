@@ -63,11 +63,9 @@ class ActualizarContactoUseCaseTest {
 
     private List<DomainEvent> eventos(ContactoId contactoId){
 
-        return List.of(new ClienteCreado(
+        return List.of(new ClienteCreado(new DatosPersonales("Lucas", "Garcia")),
 
-                new DatosPersonales("Lucas", "Garcia")),
-
-                new ContactoAgregado(contactoId,new WhatsApp("234543"), new Direccion("La ceja")),
+                new ContactoAgregado(contactoId,new WhatsApp("23454"), new Direccion("La ceja")),
 
                 new ContactoAgregado(ContactoId.of("234"),new WhatsApp("3194562343"), new Direccion("Bogota")),
                 new ContactoAgregado(ContactoId.of("566"),new WhatsApp("3210983423"), new Direccion("Barranquilla")),

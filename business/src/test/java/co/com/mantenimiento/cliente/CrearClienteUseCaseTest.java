@@ -18,7 +18,7 @@ class CrearClienteUseCaseTest {
     public void setUp(){ useCase = new CrearClienteUseCase();}
 
     @Test
-    public void crearClienteHappyPass(){
+    void crearClienteHappyPass(){
 
         //Arrange
         var command = new CrearCliente(ClienteId.of("333"),

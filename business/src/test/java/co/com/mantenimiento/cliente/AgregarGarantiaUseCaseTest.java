@@ -58,9 +58,7 @@ class AgregarGarantiaUseCaseTest  {
     }
 
     private List<DomainEvent> history(){
-
         var event = new ClienteCreado(new DatosPersonales("Juan Diego", "Gomez"));
-
         event.setAggregateRootId("13123");
         return List.of(event);
     }

@@ -65,16 +65,14 @@ class ActualizarAreaUseCaseTest {
 
     private List<DomainEvent> eventos(AreaId areaId){
 
-        return List.of(new ServicioCreado(
-
-                ClienteId.of("564"),
-                PersonalId.of("567"), new Precio(2000000)),
+        return List.of(new ServicioCreado(ClienteId.of("564"), PersonalId.of("567"), new Precio(2000000)),
 
                 new AreaAgregada(areaId, new TipoDeZona("Rural"), new TipoDeInstalacion("Bodega")),
-                new AreaAgregada(AreaId.of("043"), new TipoDeZona("Rural"), new TipoDeInstalacion("Bodega")),
-                new AreaAgregada(AreaId.of("123"), new TipoDeZona("Rural"), new TipoDeInstalacion("Bodega"))
+
+                new AreaAgregada(AreaId.of("043"), new TipoDeZona("Urbano"), new TipoDeInstalacion("Edificio")),
+                new AreaAgregada(AreaId.of("123"), new TipoDeZona("Rural"), new TipoDeInstalacion("Restaurante"))
 
                 );
-    }
+        }
 
 }
